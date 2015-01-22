@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12777,30 +12777,30 @@ Zeichen werden dargestellt).</description>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="G2" library="battery" deviceset="10MM_SM_COIN_CELL_CLIP" device=""/>
-<part name="LED4" library="led" deviceset="LED" device="SML0603" value="Rot"/>
+<part name="LED1" library="led" deviceset="LED" device="SML0603" value="Rot"/>
 <part name="LED6" library="led" deviceset="LED" device="SML0603" value="Grün"/>
-<part name="LED1" library="led" deviceset="LED" device="SML0603" value="Gelb"/>
 <part name="LED2" library="led" deviceset="LED" device="SML0603" value="Gelb"/>
-<part name="LED3" library="led" deviceset="LED" device="SML0603" value="Grün"/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="LED4" library="led" deviceset="LED" device="SML0603" value="Gelb"/>
+<part name="LED5" library="led" deviceset="LED" device="SML0603" value="Grün"/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="100 nF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0805"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
 <part name="X1" library="con-hirose" deviceset="FH12-10S-0.5S" device="H"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="LED5" library="led" deviceset="LED" device="SML0603" value="Rot"/>
+<part name="LED3" library="led" deviceset="LED" device="SML0603" value="Rot"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0805"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
 <part name="G1" library="battery" deviceset="10MM_SM_COIN_CELL_CLIP" device=""/>
-<part name="D1" library="diode" deviceset="DIODE-" device="MELF-MLL41"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="MELF-MLL41" value="LL 5819"/>
 <part name="LCD1" library="lcd-c0802-04" deviceset="LCD-C0802-04" device=""/>
 <part name="PAD1" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254"/>
 <part name="PAD3" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254"/>
@@ -12808,12 +12808,12 @@ Zeichen werden dargestellt).</description>
 <part name="PAD4" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254"/>
 <part name="PAD5" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254"/>
 <part name="PAD6" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0805"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ" device="W"/>
-<part name="SJ2" library="jumper" deviceset="SJ2W" device="W"/>
-<part name="R10" library="resistor" deviceset="R-TRIMM" device="4G/J"/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0805" value="1k6"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="SJ2" library="jumper" deviceset="SJ" device="W"/>
+<part name="SJ1" library="jumper" deviceset="SJ2W" device="W"/>
+<part name="R2" library="resistor" deviceset="R-TRIMM" device="4G/J" value="10k"/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12825,21 +12825,21 @@ Zeichen werden dargestellt).</description>
 <instance part="P+1" gate="VCC" x="-22.86" y="66.04" rot="R90"/>
 <instance part="GND2" gate="1" x="12.7" y="17.78"/>
 <instance part="G2" gate="G$1" x="-12.7" y="25.4" rot="R90"/>
-<instance part="LED4" gate="G$1" x="78.74" y="55.626" rot="R90"/>
+<instance part="LED1" gate="G$1" x="78.74" y="55.626" rot="R90"/>
 <instance part="LED6" gate="G$1" x="99.06" y="66.04" rot="R90"/>
-<instance part="LED1" gate="G$1" x="78.74" y="48.26" rot="R90"/>
-<instance part="LED2" gate="G$1" x="78.74" y="37.846" rot="R90"/>
-<instance part="LED3" gate="G$1" x="78.74" y="33.02" rot="R90"/>
-<instance part="GND8" gate="1" x="109.22" y="66.04" rot="R90"/>
-<instance part="GND4" gate="1" x="88.9" y="48.26" rot="R90"/>
-<instance part="GND5" gate="1" x="88.9" y="37.846" rot="R90"/>
-<instance part="GND6" gate="1" x="88.9" y="33.02" rot="R90"/>
+<instance part="LED2" gate="G$1" x="78.74" y="48.26" rot="R90"/>
+<instance part="LED4" gate="G$1" x="78.74" y="37.846" rot="R90"/>
+<instance part="LED5" gate="G$1" x="78.74" y="33.02" rot="R90"/>
+<instance part="GND10" gate="1" x="109.22" y="66.04" rot="R90"/>
+<instance part="GND6" gate="1" x="88.9" y="48.26" rot="R90"/>
+<instance part="GND8" gate="1" x="88.9" y="37.846" rot="R90"/>
+<instance part="GND9" gate="1" x="88.9" y="33.02" rot="R90"/>
 <instance part="C1" gate="G$1" x="-10.16" y="60.96" rot="R180"/>
 <instance part="GND1" gate="1" x="-10.16" y="53.34"/>
-<instance part="R6" gate="G$1" x="65.786" y="55.626"/>
-<instance part="R3" gate="G$1" x="66.04" y="48.26"/>
-<instance part="R4" gate="G$1" x="66.04" y="37.846"/>
-<instance part="R5" gate="G$1" x="66.294" y="33.02"/>
+<instance part="R3" gate="G$1" x="65.786" y="55.626"/>
+<instance part="R4" gate="G$1" x="66.04" y="48.26"/>
+<instance part="R6" gate="G$1" x="66.04" y="37.846"/>
+<instance part="R7" gate="G$1" x="66.294" y="33.02"/>
 <instance part="X1" gate="-1" x="55.88" y="2.54" rot="R90"/>
 <instance part="X1" gate="-2" x="63.5" y="2.54" rot="R90"/>
 <instance part="X1" gate="-3" x="40.64" y="-15.24" rot="R270"/>
@@ -12850,12 +12850,12 @@ Zeichen werden dargestellt).</description>
 <instance part="X1" gate="-8" x="58.42" y="22.86" rot="MR180"/>
 <instance part="X1" gate="-9" x="58.42" y="25.4" rot="MR180"/>
 <instance part="X1" gate="-10" x="58.42" y="27.94" rot="MR180"/>
-<instance part="GND3" gate="1" x="55.88" y="-5.08"/>
+<instance part="GND4" gate="1" x="55.88" y="-5.08"/>
 <instance part="P+3" gate="VCC" x="63.5" y="-5.08" rot="R180"/>
 <instance part="P+2" gate="VCC" x="48.26" y="15.24" rot="R270"/>
-<instance part="LED5" gate="G$1" x="78.74" y="43.18" rot="R90"/>
+<instance part="LED3" gate="G$1" x="78.74" y="43.18" rot="R90"/>
 <instance part="GND7" gate="1" x="88.9" y="43.18" rot="R90"/>
-<instance part="R7" gate="G$1" x="66.04" y="43.18" rot="R180"/>
+<instance part="R5" gate="G$1" x="66.04" y="43.18" rot="R180"/>
 <instance part="G1" gate="G$1" x="-12.7" y="38.1" rot="R90"/>
 <instance part="D1" gate="G$1" x="-12.7" y="48.26" rot="R90"/>
 <instance part="LCD1" gate="G$1" x="20.32" y="-2.54"/>
@@ -12866,11 +12866,11 @@ Zeichen werden dargestellt).</description>
 <instance part="PAD5" gate="G$1" x="58.42" y="63.5" rot="R270"/>
 <instance part="PAD6" gate="G$1" x="66.04" y="60.96" rot="R270"/>
 <instance part="R8" gate="G$1" x="91.44" y="66.04"/>
-<instance part="GND9" gate="1" x="88.9" y="55.626" rot="R90"/>
-<instance part="SJ1" gate="1" x="78.74" y="66.04" rot="R180"/>
-<instance part="SJ2" gate="G$1" x="-12.7" y="10.16" rot="R180"/>
-<instance part="R10" gate="G$1" x="40.64" y="7.62" rot="R180"/>
-<instance part="GND10" gate="1" x="40.64" y="0"/>
+<instance part="GND5" gate="1" x="88.9" y="55.626" rot="R90"/>
+<instance part="SJ2" gate="1" x="78.74" y="66.04" rot="R180"/>
+<instance part="SJ1" gate="G$1" x="-12.7" y="10.16" rot="R180"/>
+<instance part="R2" gate="G$1" x="40.64" y="7.62" rot="R180"/>
+<instance part="GND3" gate="1" x="40.64" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -12910,7 +12910,7 @@ Zeichen werden dargestellt).</description>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="45.72" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="15.24" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="E"/>
+<pinref part="R2" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
@@ -12928,23 +12928,23 @@ Zeichen werden dargestellt).</description>
 <wire x1="7.62" y1="20.32" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
 <junction x="7.62" y="20.32"/>
 <pinref part="PAD2" gate="G$1" pin="P"/>
-<pinref part="SJ2" gate="G$1" pin="2"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="83.82" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="83.82" y1="37.846" x2="86.36" y2="37.846" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="83.82" y1="33.02" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -12954,27 +12954,27 @@ Zeichen werden dargestellt).</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="86.36" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="G$1" pin="C"/>
-<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="104.14" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="83.82" y1="55.626" x2="86.36" y2="55.626" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="X1" gate="-1" pin="1"/>
 <wire x1="55.88" y1="-2.54" x2="55.88" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="A"/>
-<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="A"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12991,7 +12991,7 @@ Zeichen werden dargestellt).</description>
 <pinref part="PAD6" gate="G$1" pin="P"/>
 <wire x1="66.04" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <junction x="66.04" y="58.42"/>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="SJ2" gate="1" pin="2"/>
 <wire x1="71.12" y1="58.42" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="58.42" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 </segment>
@@ -13005,42 +13005,42 @@ Zeichen werden dargestellt).</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="33.02" x2="71.374" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="37.846" x2="71.12" y2="37.846" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="70.866" y1="55.626" x2="76.2" y2="55.626" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="(OC1B)PB4"/>
 <wire x1="60.706" y1="55.626" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="48.26" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(OC1A)PB3"/>
 <wire x1="60.96" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
@@ -13048,7 +13048,7 @@ Zeichen werden dargestellt).</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="37.846" x2="58.42" y2="37.846" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="37.846" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(OC0A)PB2"/>
@@ -13057,7 +13057,7 @@ Zeichen werden dargestellt).</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="61.214" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="33.02" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(AIN1)PB1"/>
@@ -13118,14 +13118,14 @@ Zeichen werden dargestellt).</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="43.18" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="(AIN0)PB0"/>
 <wire x1="60.96" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
@@ -13154,7 +13154,7 @@ Zeichen werden dargestellt).</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="SJ2" gate="1" pin="1"/>
 <wire x1="83.82" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13162,7 +13162,7 @@ Zeichen werden dargestellt).</description>
 <segment>
 <pinref part="G2" gate="G$1" pin="-"/>
 <wire x1="-12.7" y1="17.78" x2="-12.7" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="G$1" pin="3"/>
+<pinref part="SJ1" gate="G$1" pin="3"/>
 <wire x1="-12.7" y1="15.24" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13170,7 +13170,7 @@ Zeichen werden dargestellt).</description>
 <segment>
 <pinref part="X1" gate="-3" pin="1"/>
 <wire x1="40.64" y1="-10.16" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="S"/>
+<pinref part="R2" gate="G$1" pin="S"/>
 <wire x1="35.56" y1="7.62" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-10.16" x2="40.64" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
