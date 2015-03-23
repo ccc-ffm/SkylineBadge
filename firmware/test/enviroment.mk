@@ -1,5 +1,6 @@
 #Toolchain Path
-TOOL_PATH ?= ~/Repos/Github/SkylineBadge/toolchain/binary/avr8-gnu-toolchain-linux_x86_64/bin/
+#Set TOOL_PATH
+TOOL_PATH ?=
 SHELL = sh
 CC = $(TOOL_PATH)avr-gcc
 OBJCOPY = $(TOOL_PATH)avr-objcopy
