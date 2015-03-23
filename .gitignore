@@ -35,4 +35,6 @@ eagle.epf
 
 *.eps
 
+#Ignore folders
 toolchain/
+datasheets/
