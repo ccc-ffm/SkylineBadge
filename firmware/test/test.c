@@ -1,10 +1,7 @@
-/*
- * http://homepage.hispeed.ch/peterfleury/doxygen/avr-gcc-libraries/group__pfleury__lcd.html
- * 
- * 
- * 
- * 
- * 
+/*Firmware for hardware testing.
+ *Enable all LEDs
+ *Print '*cccffm*' on LCD
+ *LCD Libraries from Peter Fleury http://homepage.hispeed.ch/peterfleury/avr-software.html#libs
  */
 
 #include <avr/io.h>
@@ -25,15 +22,14 @@ int main() {
 
 	/*LCD init*/
     lcd_init(LCD_DISP_ON);
+	
 	/*Just to be sure*/
 	_delay_ms(10);
-    
         
 	/*Display something*/
 	lcd_puts("*cccffm*");
     lcd_gotoxy(0,1);
-    lcd_puts("**fast**");   
-     
+    lcd_puts("*cccffm*");   
      
     /* loop forever */ 
 	while(1){}
