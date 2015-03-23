@@ -35,6 +35,7 @@ eagle.epf
 
 *.eps
 
-#Ignore folders
+#Ignore local folders
 toolchain/
 datasheets/
+parts/
