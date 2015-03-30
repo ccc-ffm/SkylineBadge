@@ -39,3 +39,6 @@ eagle.epf
 toolchain/
 datasheets/
 parts/
+
+#Ignore IDE stuff
+*.cbp
