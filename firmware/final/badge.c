@@ -16,7 +16,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
@@ -28,6 +27,7 @@
 #include "setup.h"
 #include "config.h"
 
+#include "shift.h"
 
 int
 main() {
@@ -41,6 +41,7 @@ main() {
 	/*LCD setup*/
 	lcd_init(LCD_DISP_ON);
 	_delay_ms(15);
+
 	lcd_gotoxy(0,0);
 	lcd_puts(row0);
 	lcd_gotoxy(0,1);
@@ -52,12 +53,26 @@ main() {
 	/*Loop forever*/
 	while(1) {
 		
-		set_sleep_mode(SLEEP_MODE_IDLE);
-        sleep_mode();                   // in den Schlafmodus wechseln
-		
 		if(toggle_flag == 1) {
 			led_toggle();
 			toggle_flag=0;
+		}
+		
+		if(scroll_flag == 1) {
+			
+			if(scroll0 == 1){
+				lcd_gotoxy(0,0);
+				shift_left(row0);
+				lcd_puts(row0);
+			}
+			
+			if(scroll1 == 1){
+				lcd_gotoxy(0,1);
+				shift_left(row1);
+				lcd_puts(row1);
+				
+			}
+			scroll_flag=0;
 		}
 	}
 	
@@ -66,24 +81,23 @@ main() {
 }
 
 
-
-/*Interrupt Service Routine for
- * T0 on Compare match
- */
+/*Interrupt Service Routine for T0 Compare match*/
 ISR (TIMER0_COMPA_vect) {
    
 	timer_tick0++;
 	timer_tick1++;
 	
-	if(timer_tick0 == 5)
+	if(timer_tick0 == 7)
 	{
 		toggle_flag = 1;
 		timer_tick0 = 0;
 	}
 	
-	if(timer_tick1 == 2)
+	if(timer_tick1 == 3)
 	{
 		scroll_flag = 1;
 		timer_tick1 = 0;
 	}
+	
 }
+
