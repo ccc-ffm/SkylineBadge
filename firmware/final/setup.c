@@ -21,6 +21,9 @@ timer_setup()
     TIFR |= 0x01; 
     /*TC0 compare match A Interrupt*/
     TIMSK = 0x01;
-	/*Clock source CLK/1024, start timer*/
+	/*Clock source CLK/1024, start timer
+	 * 8 MHz /1024 = 7812.5 kHz
+	 */
+	
     TCCR0B = 0x05;      
 }
